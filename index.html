@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- START CREATE REACT APP CODE -->
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- END CREATE REACT APP CODE -->
+    <title>Romocon</title>
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans|Slabo+27px" rel="stylesheet">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles/meyer-reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="main-wrapper">
+      <section class="disclaimer" id="homeDisclaimer">
+        <h3>DISCLAIMER</h3>
+        <p class="txtDisclaimer">
+          THIS SITE IS FOR LEARING PURPOSES ONLY.
+          IT IS IN NOW WAY ASSOCIATED WITH ROCKY 
+          MOUNTAIN CONSERVANCY  
+        </p>
+        <span class="closeButton" onclick="closeBox()">X</span>
+      </section>
+      <header class="page-header">
+        <div class="header-top-row">
+          <div id="logo-container">
+            <img id="logo" src="images/romocon-logo.png" alt="ROMOCON Logo">
+          </div>
+          <a class="donate" href='#'>DONATE</a>
+          <div class="header-icons">
+            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+          </div>       
+        </div>
+        <nav class="header-bottom-row">
+          <a href="index.html">HOME</a>
+          <div class="dropmenu">
+            <a class="drop-btn" href="#">MEMBERSHIP</a>
+            <div class="drop-content">
+              <a href="join.html">JOIN TODAY</a>
+              <a href="#">MEMBER EVENTS</a>
+              <a href="#">MEMBER NEWSLETTER</a>
+            </div>
+          </div>
+          <a href="#">SHOP</a>
+          <div class="dropmenu">
+            <a class="drop-btn" href="#">PROJECTS</a>
+            <div class="drop-content">
+              <a href="#">CURRENT PROJECTS</a>
+              <a href="#">UPCOMING PROJECTS</a>
+              <a href="#">COMPLETED PROJECTS</a>
+            </div>
+          </div>
+          <div class="dropmenu">
+            <a class="drop-btn" href="#">LEARN</a> 
+            <div class="drop-content" id="dropContentEnd">
+              <a href="#">FIELD INSTITUTE</a>
+              <a href="#">CONSERVATION CORPS</a>
+              <a href="#">HIGH SCHOOL LEADERSHIP CORPS</a>
+              <a href="#">EDUCATION FELLOWSHIPS</a>
+              <a href="#">RMNP FELLOWSHIPS</a>
+            </div>
+          </div>         
+        </nav>
+      </header>
+      <section class="banner">
+        <span id="bannerHeadline">Supporting Rocky Mountain National Park since 1931</span>
+      </section>
+      <main id="mainHome">
+        <section class="main-content" id="newsCarousel">
+          <h2 id="newsHeadline">Conservancy Leads Effort to Protect Wild Basin Parcel</h2>
+          <figure id="newsFigure"><img id="newsPic" src="js/news/newsImages/wildBasin.jpg" alt="Wild Basin"></figure>
+          <p id="newsText">
+            It could have been a worst-case scenario for 
+            Rocky Mountain National Park: a “Land for Sale”
+            sign going up on the largest privately-held,
+            developed parcel in the Wild Basin area. 
+            If not for a quick response from the 
+            Rocky Mountain Conservancy, a 12.5-acre 
+            property would have been listed for public 
+            sale for only the second time in 70 years. 
+            Learn more about this property that was purchased
+            for the park on December 14.
+          </p>
+        </section>
+        <section class="main-content" id="plugRibbon">
+          <article class="plug-mod">
+            <h3>Help Us Help the Park</h3>
+            <figure><img id="newsImage" src="images/plugImages/help.jpg" alt="Help the Park"></figure>
+            <p>
+              From the trails you hike to the wildlife you encounter, 
+              our work in Rocky Mountain National Park helps protect 
+              and preserve the beauty of one of America’s favorite 
+              national parks.
+            </p>
+          </article>
+          <article class="plug-mod">
+            <h3>Learn With Us</h3>
+            <figure><img src="images/plugImages/learn.jpg" alt="Learn"></figure>
+            <p>
+              With unprecedented access to RMNP and hands-on field 
+              opportunities, these educational programs offer
+              experiences that will last a lifetime!
+            </p>
+          </article>
+          <article class="plug-mod">
+            <h3>Become a Member</h3>
+            <figure><img src="images/plugImages/member.jpg" alt="Become a member"></figure>
+            <p>
+              Your Rocky Mountain Conservancy membership keeps you 
+              connected to Rocky Mountain National Park, helps protect
+              and preserve the park, and saves you 15% in our Nature 
+              Stores in the park!
+            </p>
+          </article>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <section class="footer-col">
+          <h3>CONTACT</h3>
+          <address>
+            48 Alpine, Cir <br />
+            Estes Park, CO 80517 <br />
+            P - (970)586-0108
+          </address>
+        </section>
+        <section class="footer-col">
+          <h3>NEWS</h3>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">NEWS LINK 1</a></li>
+              <li><a href="#">NEWS LINK 2</a></li>
+              <li><a href="#">NEWS LINK 3</a></li>
+              <li><a href="#">NEWS LINK 4</a></li>              
+            </ul>
+          </nav>
+        </section>
+        <section class="footer-col">
+          <h3>SUPPORT</h3>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">DONATE</a></li>
+              <li><a href="#">VOLUNTEER</a></li>                        
+            </ul>
+          </nav>
+        </section>
+        <section class="footer-col">
+          <h3>CONNECT</h3>
+          <div id="socMenu">
+            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+          </div>
+        </section>
+
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+   </body>
+</html>

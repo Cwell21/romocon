@@ -1,0 +1,444 @@
+/* GOOGLE FONT CODE
+font-family: 'Open Sans', sans-serif; - Headlines
+font-family: 'Slabo 27px', serif; - Paragraphs
+font-family: 'Fira Sans', sans-serif; - Links
+*/
+
+
+/* GLOBAL STYLES***************************************************************/
+* {
+  box-sizing: border-box;
+}
+a {
+  font-family: 'Fira Sans', sans-serif;
+}
+body {
+  background-color: rgb(125,125,125);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/******************************************************************************/
+
+/* DISCLAIMER STYLES*********************************************************/
+section.disclaimer {
+  background-color: rgba(200,200,200,.5);
+  display: none;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  padding-top: 10rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+section.disclaimer > h3 {
+  background-color: rgb(200,200,200);
+  margin: auto;
+  padding-top: 1rem;
+  width: 25%;
+}
+p.txtDisclaimer {
+  background-color: rgb(200,200,200);
+  margin: auto;
+  padding: 1rem;
+  width: 25%;
+}
+
+span.closeButton {
+  background-color: rgb(141,167,200);
+  border-radius: 50%;
+  color: rgb(235,235,235);
+  cursor: pointer;
+  height: 2rem;
+  line-height: 2rem;
+  position: absolute;
+  right: 37%;
+  text-align: center;
+  top: 10rem;
+  width: 2rem;
+}
+/******************************************************************************/
+
+/* MAIN WRAPPER STYLES*********************************************************/
+div.main-wrapper {
+  /* DEVELOPMENT STYLES */
+  /* border: 1px solid red; */
+  /* END DS */
+  display: flex;
+  flex-flow: column nowrap;
+  height: 112.5rem;
+  margin: auto;
+  overflow: hidden;
+  width: 960px;
+}
+
+/******************************************************************************/
+
+/* HEADER STYLES*********************************************************/
+header.page-header {
+
+  background-color: rgb(141,167,200);
+  display: flex;
+  flex-flow: column wrap;
+  height: 9.375rem;
+  padding: 0.313rem 0.313rem 0;
+  width: 100%;
+}
+
+div.header-top-row {
+  
+  display: flex;
+  flex-flow: row wrap;
+  height: 75%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div#logo-container {
+  
+  height: 100%;
+  width: 12.5rem; 
+}
+
+a.donate {
+  background-color: rgb(112,22,10);
+  color: rgb(235,235,235);
+  display: inline-block;
+  font-size: 1.5rem;
+  height: 60%;
+  line-height: 240%;
+  margin-top: -0.313rem;
+  text-align: center;
+  text-decoration: none;
+  width: 12.5rem;
+}
+a.donate:hover {
+  color: rgb(112,22,10);
+  background-color: rgb(235,235,235);
+}
+
+div.header-icons {
+  display: flex;
+  color: rgb(235,235,235);
+  flex-flow: row nowrap;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+  padding-top: .75rem;
+  width: 12.5rem;
+}
+div.header-icons span {
+  width: 2.5rem;
+}
+
+nav.header-bottom-row {
+ 
+  height: 25%;
+  width: 100%;
+}
+
+.header-bottom-row a{
+  
+  display: inline-block;
+  color: rgb(235,235,235);
+  float: left;
+  font-family: serif;
+  font-size: 1.5rem;
+  height: 100%;
+  line-height: 150%;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
+  
+}
+/* DROP MENU */
+div.dropmenu {
+  
+  float: left;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  width: 20%;
+}
+.dropmenu, .drop-btn {
+  font-family: inherit;
+  margin: 0;
+  text-align: center;
+}
+
+.drop-content {
+  background-color: rgba(141,167,200,.95);
+  display: none;
+  flex-flow: column nowrap;
+  /* height: 5.625rem; */
+  height: auto;
+  left: 0;
+  position: absolute;
+  top:100%;
+  width: 25rem;
+  z-index: 1;
+}
+div#dropContentEnd {
+  float: right;
+  margin-left: -19.5rem;
+}
+div#dropContentEnd a {
+  text-align: right;
+  padding-left: 0;
+  padding-right: .5rem;
+}
+.drop-content a {
+  display: inline-block;
+  font-size: 1.25rem;
+  height: 2rem;
+  padding-left: .25rem;
+  text-align: left;
+  width: 100%;
+}
+div.dropmenu:hover div.drop-content{
+  display: block;
+}
+
+
+
+/******************************************************************************/
+
+/* BANNER STYLES*********************************************************/
+section.banner {
+
+  background: url('../images/rmnp-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 .25rem rgb(175,175,175);
+  height: 25rem;
+  opacity: .75;
+  position: relative;
+  width: 100%;
+}
+
+span#bannerHeadline {
+  background-color: rgba(141,167,200,.95);
+  border-radius: .5rem;
+  box-shadow: .25rem .25rem rgba(5,5,5,.75);
+  color: rgb(235,235,235);
+  font-size: 1.25rem;
+  height: 20%;
+  left: 5%;
+  line-height: 5rem;
+  padding-left: 1rem;
+  position: absolute;
+  text-align: left;
+  top: 60%; 
+  width: 55%;
+}
+
+/******************************************************************************/
+
+/* MAIN SECTION STYLES*********************************************************/
+div#root {
+  
+  height: 63.125rem;
+  width: 100%;
+}
+
+main#mainHome {
+  background-color: rgb(215,215,215);
+  display: flex;
+  flex-flow: column nowrap;
+  height: 63.125rem;
+  width: 100%;
+}
+
+section.main-content {  
+  
+  height: 50%;  
+  width: 100%;
+}
+section#newsCarousel {  
+  padding: 2rem 1rem 1rem;
+}
+h2#newsHeadline {
+  color: rgb(112,22,10);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.25rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+h2#newsHeadline::after {
+  border-bottom: 1px solid rgb(175,175,175);
+  display: block;
+  content:"";
+  height: 1rem;
+  margin: auto;
+  width: 75%;
+}
+
+figure#newsFigure {
+  float: left;
+  margin-right: 3rem;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+p#newsText {
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding: 1rem 5rem;
+}
+
+section#plugRibbon {  
+  display: flex;
+  flex-flow: row nowrap;
+  padding: .125rem;
+  justify-content: center;
+  width: 100%;
+}
+
+article.plug-mod {
+  
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 33%;
+}
+
+article > h3 {
+  color: rgb(112,22,10);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  height: 4rem;
+  line-height: 2rem;
+  text-align: center;
+  
+}
+
+article > h3::after, article > h3::before {
+  border-bottom: 1px solid rgb(175,175,175);
+  display: block;
+  content:"";
+  height: 1rem;
+  margin: auto;
+  width: 75%;
+}
+article > h3::after {
+  margin-top: -1rem;
+}
+
+figure {
+
+  background-color: rgb(235,235,235);
+  border-radius: .5rem;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+article.plug-mod p {
+  background-color: rgb(235,235,235);
+  border-radius: .5rem;
+  font-family: 'Slabo 27px', serif;
+  height: 35%;
+  line-height: 1.25rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/******************************************************************************/
+
+/* FOOTER STYLES*********************************************************/
+footer.page-footer {
+
+  background-color: rgb(141,167,200);
+  color: rgb(235,235,235);
+  display: flex;
+  height: 15.625rem;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+section.footer-col {
+
+  align-items: center;  
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  width: 25%;
+}
+section.footer-col > h3 {
+  font-size: 1.5rem;
+  height: 2.5rem;
+}
+address {
+  font-size: 1.25rem;
+  text-align: center;
+  width: 100%;
+}
+
+nav.footer-nav {
+
+  width: 100%;
+}
+
+nav.footer-nav li {
+  
+  height: 2rem;
+  line-height: 2rem;
+  list-style: none;
+  text-align: center;
+  
+}
+
+nav.footer-nav a {
+  display: inline-block;
+  color: rgb(235,235,235);
+  font-size: 1.25rem;
+  text-decoration: none;
+  
+}
+
+div#socMenu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+div#socMenu span {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 20%;
+}
+
+/******************************************************************************/
+/* MEDIA QUERIES*********************************************************/
+@media only screen and (max-width: 600px) {
+  nav.header-bottom-row {
+    display: flex;
+    flex-flow: column wrap;
+    
+  }
+}
