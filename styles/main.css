@@ -38,6 +38,11 @@ img {
   max-width: 100%;
 }
 
+p {
+  color: 
+  font-family: 'Slabo 27px', serif;
+}
+
 /******************************************************************************/
 
 /* DISCLAIMER STYLES*********************************************************/
@@ -361,6 +366,7 @@ figure {
 article.plug-mod p {
   background-color: rgb(235,235,235);
   border-radius: .5rem;
+  color: rgb(112,22,10);
   font-family: 'Slabo 27px', serif;
   height: 35%;
   line-height: 1.25rem;
@@ -435,10 +441,5 @@ div#socMenu span {
 
 /******************************************************************************/
 /* MEDIA QUERIES*********************************************************/
-@media only screen and (max-width: 600px) {
-  nav.header-bottom-row {
-    display: flex;
-    flex-flow: column wrap;
-    
-  }
+
 }

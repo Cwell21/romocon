@@ -1,0 +1,107 @@
+@media only screen and (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  div.main-wrapper {    
+    height: auto;
+    width: 100vw;
+  }
+  /*********************************************************************************
+  DISCLAIMER STYLES
+  **********************************************************************************/
+  section#homeDisclaimer {
+    margin: 0;
+    width: 100vw;
+  }
+  section.disclaimer h3 {
+    width: 90%;
+  }
+  p.txtDisclaimer {
+    width: 90%;
+  }
+  span.closeButton {
+    right: 2.5%;
+  }
+  /*********************************************************************************
+  HEADER STYLES
+  **********************************************************************************/
+  header.page-header {
+    height: auto;
+  }
+  div.header-top-row {
+    align-items: center;
+    flex-flow: column;
+    height: auto;
+  }
+
+  div.header-icons {
+    display: none;
+  }
+
+  nav.header-bottom-row {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    padding: 2vh 2vw;
+  }
+
+  nav.header-bottom-row a {
+    height: auto;
+    width: 50%;
+  }
+
+/************************************************************************************ 
+BANNER STYLES
+************************************************************************************/
+  section.banner {
+    display: none;
+  }
+
+  h2#newsHeadline::after {
+    display: none;
+  }
+
+  /*********************************************************************************
+  MAIN STYLES
+  **********************************************************************************/
+  main#mainHome {
+    height: auto;
+  }
+  section#newsCarousel {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: auto;
+  }
+  figure#newsFigure {
+    float: none;
+    width: 100%;
+  }
+  p#newsText {
+    padding: 1rem 1rem;
+  }
+  section#plugRibbon {
+    flex-flow: column;
+    height: auto;
+  }
+  article.plug-mod {
+    height: auto;
+    width: 100%;
+  }
+  /*********************************************************************************
+  FOOTER STYLES
+  **********************************************************************************/
+  footer.page-footer {
+    flex-direction: column;
+    height: auto;
+  }
+  section.footer-col {
+
+    height: auto;
+    padding: 3vh 0;
+    width: 100%;
+  }
+
+}
