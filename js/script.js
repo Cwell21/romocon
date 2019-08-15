@@ -103,3 +103,19 @@ function initJoin() {
 function handleJoin() {
   alert('This is not a real form.  You are not signing up for anything.  This is a learning exercise for the webdeveloper');
 }
+
+/****************************************************
+CONSTRUCTION.HTML CODE
+****************************************************/
+
+function initConstruction() {  
+  let elWrench = document.getElementById('wrench');
+
+  setInterval(() => {
+    if(elWrench.classList.contains('wrenchIcon')) {
+      elWrench.classList.remove('wrenchIcon');
+    } else {
+      elWrench.classList.add('wrenchIcon');
+    }
+  }, 0750);
+}

@@ -511,4 +511,27 @@ div.frmBtnGroup {
   color: rgb(112,22,10);
 }
 
+/******************************************************************************/
+/* UNDER CONSTRUCTION HTML STYLES*********************************************************/
 
+.underConstruction {
+  align-items: center;
+  background-color: rgb(112,22,10);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  jusify-content: flex-start;
+  padding-top: 5vh;
+}
+
+.underConstruction h2 {
+  color: rgb(235,235,235);
+  height: 10vh;
+}
+.underConstruction i {
+  color: rgb(235,235,235);
+}
+
+.wrenchIcon {
+ transform: rotate(45deg);
+}

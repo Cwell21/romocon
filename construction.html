@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<!-- 
+  DEVELOPER NOTE: THIS SITE IS NOT ASSOCIATED WITH ROCKY MOUNTAIN CONSERVANCY.  
+  THIS SITE WAS DEVELOPED FOR LEARNING PURPOSES ONLY.
+  THIS LEARNING SITE IS STILL UNDER CONSTRUCTION
+ -->
+
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Romocon-Under Construction Site</title>
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans|Slabo+27px" rel="stylesheet">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles/meyer-reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-mobile.css">
+  </head>
+  <body onload="initConstruction()">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="main-wrapper">
+      <section class="disclaimer" id="homeDisclaimer">
+        <h3>DISCLAIMER</h3>
+        <p class="txtDisclaimer">
+          THIS SITE IS FOR LEARING PURPOSES ONLY.
+          IT IS IN NO WAY ASSOCIATED WITH ROCKY 
+          MOUNTAIN CONSERVANCY  
+        </p>
+        <span class="closeButton" onclick="closeBox()">X</span>
+      </section>
+      <header class="page-header">
+        <div class="header-top-row">
+          <div id="logo-container">
+            <img id="logo" src="images/romocon-logo.png" alt="ROMOCON Logo">
+          </div>
+          <a class="donate" href='#'>DONATE</a>
+          <div class="header-icons">
+              <span>
+                  <a href="https://www.facebook.com/RockyMountainConservancy/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </span>
+                <span>
+                  <a href="https://www.instagram.com/rmconservancy/?hl=en" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </span>
+                <span>
+                  <a href="https://twitter.com/?lang=en" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </span>
+          </div>       
+        </div>
+        <nav class="header-bottom-row">
+          <a href="index.html">HOME</a>
+          <div class="dropmenu">
+            <a class="drop-btn" href="#">MEMBERSHIP</a>
+            <div class="drop-content">
+              <a href="#">JOIN TODAY</a>
+              <a href="#">MEMBER EVENTS</a>
+              <a href="#">MEMBER NEWSLETTER</a>
+            </div>
+          </div>
+          <a href="#">SHOP</a>
+          <div class="dropmenu">
+            <a class="drop-btn" href="#">PROJECTS</a>
+            <div class="drop-content">
+              <a href="#">CURRENT PROJECTS</a>
+              <a href="#">UPCOMING PROJECTS</a>
+              <a href="#">COMPLETED PROJECTS</a>
+            </div>
+          </div>
+          <div class="dropmenu">
+            <a class="drop-btn" href="#">LEARN</a> 
+            <div class="drop-content" id="dropContentEnd">
+              <a href="#">FIELD INSTITUTE</a>
+              <a href="#">CONSERVATION CORPS</a>
+              <a href="#">HIGH SCHOOL LEADERSHIP CORPS</a>
+              <a href="#">EDUCATION FELLOWSHIPS</a>
+              <a href="#">RMNP FELLOWSHIPS</a>
+            </div>
+          </div>         
+        </nav>
+      </header>
+      <section class="banner">
+        <span id="bannerHeadline">Supporting Rocky Mountain National Park since 1931</span>
+      </section>
+      <main id="mainHome">
+       <div class="underConstruction">
+          <h2>This page is under construction.  Thank you for your patience</h2>
+          <i class="fas fa-wrench fa-5x" id="wrench"></i>
+       </div>
+      </main>
+      <footer class="page-footer">
+        <section class="footer-col">
+          <h3>CONTACT</h3>
+          <address>
+            48 Alpine, Cir <br />
+            Estes Park, CO 80517 <br />
+            P - (970)586-0108
+          </address>
+        </section>
+        <section class="footer-col">
+          <h3>NEWS</h3>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">NEWS LINK 1</a></li>
+              <li><a href="#">NEWS LINK 2</a></li>
+              <li><a href="#">NEWS LINK 3</a></li>
+              <li><a href="#">NEWS LINK 4</a></li>              
+            </ul>
+          </nav>
+        </section>
+        <section class="footer-col">
+          <h3>SUPPORT</h3>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">DONATE</a></li>
+              <li><a href="#">VOLUNTEER</a></li>                        
+            </ul>
+          </nav>
+        </section>
+        <section class="footer-col">
+          <h3>CONNECT</h3>
+          <div id="socMenu">
+            <span>
+              <a href="https://www.facebook.com/RockyMountainConservancy/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </span>
+            <span>
+              <a href="https://www.instagram.com/rmconservancy/?hl=en" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </span>
+            <span>
+              <a href="https://twitter.com/?lang=en" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </span>
+          </div>
+        </section>
+
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+   </body>
+</html>
