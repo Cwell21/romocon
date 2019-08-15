@@ -239,7 +239,9 @@ section.banner {
   box-shadow: 0 .25rem rgb(175,175,175);
   height: 25rem;
   opacity: .75;
+  overflow: hidden;
   position: relative;
+  transition: height 2s;
   width: 100%;
 }
 
@@ -252,6 +254,7 @@ span#bannerHeadline {
   height: 20%;
   left: 5%;
   line-height: 5rem;
+  overflow: hidden;
   padding-left: 1rem;
   position: absolute;
   text-align: left;
@@ -440,6 +443,55 @@ div#socMenu span {
 }
 
 /******************************************************************************/
-/* MEDIA QUERIES*********************************************************/
+/* JOIN HTML STYLES*********************************************************/
 
+form {
+  background-color: rgb(112,22,10);
+  border: 1px solid rgb(175,175,175);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgb(75,75,75);
+  color: rgb(235,235,235);
+  display: flex;
+  flex-flow: column;
+  font-family: 'Open Sans', sans-serif;
+  margin: 5vh auto;
+  padding: 5vh 5vw;
 }
+form h2 {
+  height: 7vh;
+}
+div.formElement {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  height: 10vh;
+  justify-content: flex-start;
+}
+form label {  
+  font-size: 1.5rem;
+  text-align: right;
+  width: 15vw;
+}
+form input[type=text] {
+  border-radius: 5px;
+  height: 5vh;
+  margin-left: 2vw;
+  width: 40vw;
+}
+
+div.frmBtnGroup {
+  justify-content: space-around;
+}
+
+.frmBtn {
+  background-color: rgb(141,167,200);
+  border: 2px solid rgb(235,235,235);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgb(5,5,5);
+  color: rgb(235,235,235);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  height: 7vh;
+  width: 20vw;
+}
+

@@ -9,7 +9,7 @@ setTimeout(
   () => {
     let el = document.getElementById("homeDisclaimer");
     el.style.display = "block";
-  }, 1000);
+  }, 500);
 
 /****************************************************
 INDEX.HTML CODE
@@ -95,3 +95,7 @@ setInterval(
 /****************************************************
 JOIN.HTML CODE
 ****************************************************/
+function initJoin() {
+  let elBanner = document.getElementsByClassName('banner');
+  elBanner[0].style.height = '0px';
+}

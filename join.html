@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-mobile.css">
   </head>
-  <body>
+  <body onclick="initJoin()">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div class="main-wrapper">
       <section class="disclaimer" id="homeDisclaimer">
@@ -94,7 +94,25 @@
         <span id="bannerHeadline">Supporting Rocky Mountain National Park since 1931</span>
       </section>
       <main id="mainHome">
-   
+        <form method='POST'>
+          <h2 class='formHeading'>SUPPORT ROMOCON - BECOME A MEMBER TODAY</h2>
+          <div class='formElement'>
+            <label for='firstName' class='frmLabels'>FIRST NAME:</label>
+            <input type='text' name='firstName' placeholder='First Name'>
+          </div>
+          <div class='formElement'>
+            <label for='lastName' class='frmLabels'>LAST NAME:</label>
+            <input type='text' name='lastName' placeholder='Last Name'>
+          </div>
+          <div class='formElement'>
+            <label for='email' class='frmLabels'>EMAIL:</label>
+            <input type='text' name='email' placeholder='email'>
+          </div>
+          <div class='formElement frmBtnGroup'>
+            <button class='frmBtn' type='submit'>SUBMIT</button>
+            <button class='frmBtn' type='reset'>CLEAR</button>
+          </div>
+        </form>
       </main>
       <footer class="page-footer">
         <section class="footer-col">
