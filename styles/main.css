@@ -444,7 +444,6 @@ div#socMenu span {
 
 /******************************************************************************/
 /* JOIN HTML STYLES*********************************************************/
-
 form {
   background-color: rgb(112,22,10);
   border: 1px solid rgb(175,175,175);
@@ -457,8 +456,9 @@ form {
   margin: 5vh auto;
   padding: 5vh 5vw;
 }
-form h2 {
-  height: 7vh;
+form h1 {
+  height: 8vh;
+  
 }
 div.formElement {
   align-items: center;
@@ -472,8 +472,9 @@ form label {
   text-align: right;
   width: 15vw;
 }
-form input[type=text] {
+form input[type=text], input[type=password] {
   border-radius: 5px;
+  font-size: 1.25rem;
   height: 5vh;
   margin-left: 2vw;
   width: 40vw;
@@ -492,6 +493,15 @@ div.frmBtnGroup {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
   height: 7vh;
+  cursor: pointer;
   width: 20vw;
 }
+
+.frmBtn:hover {
+  background-color: rgb(235,235,235);
+  border-color: rgb(141,167,200);
+  box-shadow: 4px 4px 5px rgb(5,5,5);
+  color: rgb(112,22,10);
+}
+
 

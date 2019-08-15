@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+
+<!-- 
+  DEVELOPER NOTE: THIS SITE IS NOT ASSOCIATED WITH ROCKY MOUNTAIN CONSERVANCY.  
+  THIS SITE WAS DEVELOPED FOR LEARNING PURPOSES ONLY.
+  THIS LEARNING SITE IS STILL UNDER CONSTRUCTION
+ -->
+
 <html lang="en">
   <head>
     <!-- START CREATE REACT APP CODE -->
@@ -95,7 +102,7 @@
       </section>
       <main id="mainHome">
         <form method='POST'>
-          <h2 class='formHeading'>SUPPORT ROMOCON - BECOME A MEMBER TODAY</h2>
+          <h1 class='formHeading'>SUPPORT ROMOCON - BECOME A MEMBER TODAY</h1>
           <div class='formElement'>
             <label for='firstName' class='frmLabels'>FIRST NAME:</label>
             <input type='text' name='firstName' placeholder='First Name'>
@@ -108,8 +115,12 @@
             <label for='email' class='frmLabels'>EMAIL:</label>
             <input type='text' name='email' placeholder='email'>
           </div>
+          <div class='formElement'>
+            <label for='password' class='frmLabels'>PASSWORD:</label>
+            <input type='password' name='password' placeholder='DISABLED. Not a real form.' disabled>
+          </div>
           <div class='formElement frmBtnGroup'>
-            <button class='frmBtn' type='submit'>SUBMIT</button>
+            <button class='frmBtn' onclick='handleJoin()' type='reset'>SUBMIT</button>
             <button class='frmBtn' type='reset'>CLEAR</button>
           </div>
         </form>

@@ -62,7 +62,7 @@ BANNER STYLES
     display: none;
   }
 
-  
+
 
   /*********************************************************************************
   MAIN STYLES
@@ -108,5 +108,45 @@ BANNER STYLES
     padding: 3vh 0;
     width: 100%;
   }
+
+  /*********************************************************************************
+  JOIN STYLES
+  **********************************************************************************/
+  form h1 {
+    height: auto;    
+  }
+  .frmLabels {
+    text-align: left;
+    width: 100%;
+  }
+  form input[type=text], input[type=password] {
+    width: 100%;
+  }
+  .frmBtn {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /*********************************************************************************
+  JOIN STYLES
+  **********************************************************************************/
+  form h1 {
+    height: auto;    
+  }
+  .frmLabels {
+    text-align: left;
+    width: 100%;
+  }
+  form input[type=text], input[type=password] {
+    width: 100%;
+  }
+  .frmBtn {
+    
+    width: 45%;
+  }
+}
+
 
 }

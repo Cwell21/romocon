@@ -99,3 +99,7 @@ function initJoin() {
   let elBanner = document.getElementsByClassName('banner');
   elBanner[0].style.height = '0px';
 }
+
+function handleJoin() {
+  alert('This is not a real form.  You are not signing up for anything.  This is a learning exercise for the webdeveloper');
+}
