@@ -156,6 +156,9 @@ div.header-icons {
 div.header-icons span {
   width: 2.5rem;
 }
+div.header-icons a {
+  color: rgb(235,235,235);
+}
 
 nav.header-bottom-row {
  
@@ -436,10 +439,14 @@ div#socMenu {
   justify-content: center;
   width: 100%;
 }
-div#socMenu span {
+div#socMenu span {  
   font-size: 1.5rem;
   text-align: center;
   width: 20%;
+}
+
+div#socMenu a  {
+  color: rgb(235,235,235);
 }
 
 /******************************************************************************/
